@@ -1,0 +1,10 @@
+language: bash
+jobs:
+  include:
+  - script: env
+  - script: cat /home/travis/.travis/job_stages
+  - script: echo $SECRET_1 && echo $SECRET_2
+  - script: echo $SECRET_2 > xxxx && cat xxxx
+env:
+  global:
+    secure: Fg1d5yGKuy8CyV4FBpZuWYuvGfM0ZY8VTXnp9nwEVzNj+HOfw+7laD9yTpRNXVt7LBD59CcD4tZGJuagSaIYxTiGS0nYAimyNUrChN8QTMn30LTjJnTXWoa1hdqR2w3tL8kcUzbHkXkjEOsYrDGTFEDEQH5YR2Lrgrqwc8k2PiK9NLPM88Yoq8LwQ8el81v+wV6YLCsMjJ1QzRUnuG+jOXmr9KBQWr5jPyjdquj46NCLSn7h8n+TPXYUbI7BRo26feSTAPCuRF6LEWYttWjMoIvgPuErZG/QsEKnxhguIngdw9wyhubko04ZJFuFTwAr6W2hOjk8YNropk3mqMK2C7SG8cS+kzCBnDG/++DfFe2jP8UY9F8t8gJ5layQhMi6LUFWzpxemXq/gFHQa6hjkvMZaV4uljCYxW2G7gW7htWgTFFPtFs9SErRvjJR2R/8JgO4xgWNGBObkGItggtQvasjDQ+meX08IMmYugAxEX9jm3A4M+ENe/dtDU3YylVTjJHdA3sfc/LiDECB53dSPAaSLW4SoPJULiJmo+VKAGtUqnnlLYYPRlULtbXrpLybigUgmChLJhFQTiLGpuEJl14pUfbOnmQb98rnrv8vnCBN6HWjNGjkAXqhTn7dUCMhl2Kp32WcFqc+KqtuBUavjCoDQOkpWcf9tXmWlsX7QZI=
